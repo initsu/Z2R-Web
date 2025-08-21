@@ -1,0 +1,8 @@
+# Treat all files as binary (no line ending conversion) to hashes match
+* -text
+
+# These don't have hash checks
+*.css text eol=crlf
+*.json text eol=crlf
+*.html text eol=crlf
+*.txt text eol=crlf
