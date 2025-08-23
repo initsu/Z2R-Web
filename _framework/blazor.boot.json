@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CrossPlatformUI.Browser.dll",
   "resources": {
-    "hash": "sha256-m6n34EOgNOHNUhUZW4cS2Jt7vCFXCgz9/eJJvXTt+uU=",
+    "hash": "sha256-ZAeKevOSk+fZB/RI8zn6cIVqVw/fqD+Ncu1+0bHMATQ=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-6LiIft/d6SnxaWWXucapHGOXWEx5woyV/JFieHxMMqM="
     },
@@ -10,9 +10,6 @@
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-eJ0sxRKD/x6AQHO/rXNWnK/QBiyBYT2ivMlQeIK5m6E="
-    },
-    "wasmSymbols": {
-      "dotnet.native.js.symbols": "sha256-8/SGFX9NJJb9Y5NMgz8W3JYURTc+rTZ/QPvnRhfhTVg="
     },
     "assembly": {
       "Avalonia.Base.wasm": "sha256-BnGD3T29zRMP7EPG/ZURIxLPClm/r6MH/HJ25HKyD2E=",
@@ -222,19 +219,19 @@
       "mscorlib.wasm": "sha256-RLW/7NVuhoPfq151II3kX2kWHgBwQgpCw9aemQNg3to=",
       "netstandard.wasm": "sha256-lAg5WvTiA8wbsIwlr51xh0YWpXT9F5EX3Cnv+11O/mU=",
       "System.Private.CoreLib.wasm": "sha256-3O3muuRQwoLRecYRjfIFWUURvTjP4EmD2O8wYg2UDNY=",
-      "CrossPlatformUI.wasm": "sha256-cOThyHMMxDo4sxyY0s4P/DmFp1deKyotp3HMfU9wZjc=",
+      "CrossPlatformUI.wasm": "sha256-NSXP5JgQxynu3EiTaCAfBHBHYoZtB4JPtHtHon+Ujh0=",
       "FtRandoLib.wasm": "sha256-zXTZ46Bz+f29LORkTdkrK/Xy5B1/DwNv7oU1DnZNwDo=",
-      "RandomizerCore.wasm": "sha256-aDzBEgkjamSQWRtSQQrudYU1Uhua5xoo6bKfMbnbQB0=",
-      "CrossPlatformUI.Browser.wasm": "sha256-47rcnU2IkGNRh8IVE8XMJdrJSORPtNjcfWgBlPgSFr4="
+      "RandomizerCore.wasm": "sha256-HdX3LbR3LuWdCunRF/POADAy9J++Izu88gkQQyFIphw=",
+      "CrossPlatformUI.Browser.wasm": "sha256-YHPLvuYAnEYIxe/hSLNQApIcaYy/RlqUMLPqBw1Hr3Q="
     },
     "pdb": {
       "HarfBuzzSharp.pdb": "sha256-o+dvYynZx3zslGGjDDdKnDmcl4RaCn0yeWJ2V2oabNU=",
       "js65.pdb": "sha256-esjKB+R2Frim8U5ZIowAtPxXV1ToaMURk2scGYhxYxY=",
       "SkiaSharp.pdb": "sha256-xMAEGLZO+3EtuLTd1Hk8JaH6v3fcyyMK8B2HozxipbI=",
-      "CrossPlatformUI.pdb": "sha256-uyu6Z2sNk/JzU53GR/x8CKu1RYt2sT5aDhdCVkO8XFc=",
+      "CrossPlatformUI.pdb": "sha256-XZ4ZzrCBsgiXbBSCsBcE76cE8KuK3rrV1aGEF+Um88Y=",
       "FtRandoLib.pdb": "sha256-pmQtdbdgLQRWm4XUF3dFgi7JxnBfxHMnx2nOxQeZ7FQ=",
-      "RandomizerCore.pdb": "sha256-W1xznW1wHpJV8xa3kKYlhxoryrudvhYAoBf1ryL2Ubo=",
-      "CrossPlatformUI.Browser.pdb": "sha256-ZYHfpfcJEVGRWNjxjXdGe+MZKFvMsWn/uT0OoimfqnI="
+      "RandomizerCore.pdb": "sha256-eg+OEG8ACglEUw5pePWlnpJXJGTTO02xWA3+IR/JkdM=",
+      "CrossPlatformUI.Browser.pdb": "sha256-vSXxw7tIhWd4/Z7mrKjY6lAiu2IAfZ/mMAfk9KRO0A8="
     },
     "vfs": {
       "runtimeconfig.bin": {
