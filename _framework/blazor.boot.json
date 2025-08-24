@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CrossPlatformUI.Browser.dll",
   "resources": {
-    "hash": "sha256-ZAeKevOSk+fZB/RI8zn6cIVqVw/fqD+Ncu1+0bHMATQ=",
+    "hash": "sha256-z7B4ZZzjLhl/uZpZr+EMzlpyxcaajyRvS6kGiGSXbrs=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-6LiIft/d6SnxaWWXucapHGOXWEx5woyV/JFieHxMMqM="
     },
@@ -219,19 +219,19 @@
       "mscorlib.wasm": "sha256-RLW/7NVuhoPfq151II3kX2kWHgBwQgpCw9aemQNg3to=",
       "netstandard.wasm": "sha256-lAg5WvTiA8wbsIwlr51xh0YWpXT9F5EX3Cnv+11O/mU=",
       "System.Private.CoreLib.wasm": "sha256-3O3muuRQwoLRecYRjfIFWUURvTjP4EmD2O8wYg2UDNY=",
-      "CrossPlatformUI.wasm": "sha256-NSXP5JgQxynu3EiTaCAfBHBHYoZtB4JPtHtHon+Ujh0=",
+      "CrossPlatformUI.wasm": "sha256-MWTbxIKs/eY+6GqC+yzZ74zXdrdOzCl2Q3BYtazA2XE=",
       "FtRandoLib.wasm": "sha256-zXTZ46Bz+f29LORkTdkrK/Xy5B1/DwNv7oU1DnZNwDo=",
       "RandomizerCore.wasm": "sha256-HdX3LbR3LuWdCunRF/POADAy9J++Izu88gkQQyFIphw=",
-      "CrossPlatformUI.Browser.wasm": "sha256-YHPLvuYAnEYIxe/hSLNQApIcaYy/RlqUMLPqBw1Hr3Q="
+      "CrossPlatformUI.Browser.wasm": "sha256-AdZ9BMdA2n8X4uDZ1qENkW6SlbekwzwLL5cc4XG2+uY="
     },
     "pdb": {
       "HarfBuzzSharp.pdb": "sha256-o+dvYynZx3zslGGjDDdKnDmcl4RaCn0yeWJ2V2oabNU=",
       "js65.pdb": "sha256-esjKB+R2Frim8U5ZIowAtPxXV1ToaMURk2scGYhxYxY=",
       "SkiaSharp.pdb": "sha256-xMAEGLZO+3EtuLTd1Hk8JaH6v3fcyyMK8B2HozxipbI=",
-      "CrossPlatformUI.pdb": "sha256-XZ4ZzrCBsgiXbBSCsBcE76cE8KuK3rrV1aGEF+Um88Y=",
+      "CrossPlatformUI.pdb": "sha256-VS0cto4zgEOjyLPiWFeVDTfI05XeksMN7FgvGWG6N6w=",
       "FtRandoLib.pdb": "sha256-pmQtdbdgLQRWm4XUF3dFgi7JxnBfxHMnx2nOxQeZ7FQ=",
       "RandomizerCore.pdb": "sha256-eg+OEG8ACglEUw5pePWlnpJXJGTTO02xWA3+IR/JkdM=",
-      "CrossPlatformUI.Browser.pdb": "sha256-vSXxw7tIhWd4/Z7mrKjY6lAiu2IAfZ/mMAfk9KRO0A8="
+      "CrossPlatformUI.Browser.pdb": "sha256-ObV9Y27h4FtQ8MHmDx93GTrgBqoj4lFOPyFG19XzMXQ="
     },
     "vfs": {
       "runtimeconfig.bin": {
