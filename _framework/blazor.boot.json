@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CrossPlatformUI.Browser.dll",
   "resources": {
-    "hash": "sha256-myiPAL6OjEgJHXrGM1K4ub/W+A+DkZonnnuYvWJoDUA=",
+    "hash": "sha256-pc3Ki2VquYBECJsU3c1NW1Qgnfa6Z6bmLQs9TKYcIhI=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-6LiIft/d6SnxaWWXucapHGOXWEx5woyV/JFieHxMMqM="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.js": "sha256-91CDXCvYTrWqTidtPWAY6j9w/EQtJKjSj9VneQwl020="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-EdHrWbp7w8BvhWobhXCA1APJvI6l6DuwjN3o5jQ+BLw="
+      "dotnet.native.wasm": "sha256-NIibxCtAtHX7LX5kboi23CxjNLcHOat8oE7UMhbyXFk="
     },
     "assembly": {
       "Avalonia.Base.wasm": "sha256-BnGD3T29zRMP7EPG/ZURIxLPClm/r6MH/HJ25HKyD2E=",
@@ -53,6 +53,7 @@
       "System.Reactive.wasm": "sha256-lurqzInE6vTnJTNO3+E8MzBx0+2iqgFpuY/9QtyOE44=",
       "Xaml.Behaviors.Interactions.wasm": "sha256-FB56evpaJF8UF93e07o5UDGCInBxXSn7s0yQbEceGzk=",
       "Xaml.Behaviors.Interactivity.wasm": "sha256-UjykHxhLyi9AlPuSGNjQxvlWxZjItwy/zWkfdH0HGpE=",
+      "YamlDotNet.wasm": "sha256-llQ8843v8DkOqwYjb5Pf75pZQDMp1dhOwXe3o8CQzk0=",
       "Microsoft.CSharp.wasm": "sha256-nXsmsiS9BwFA3/0f5IwnxbH0jmoq3QCIr8k7lKr7yQg=",
       "Microsoft.VisualBasic.Core.wasm": "sha256-Bx9VgTGSjiNDkpkaXaROpXaxe0p8g2+g0iwfVimFoyc=",
       "Microsoft.VisualBasic.wasm": "sha256-agJGsygNM2YPAI5zIrm8MbLxEMrYZT9g+FI0r5i7YmE=",
@@ -221,19 +222,19 @@
       "mscorlib.wasm": "sha256-RLW/7NVuhoPfq151II3kX2kWHgBwQgpCw9aemQNg3to=",
       "netstandard.wasm": "sha256-lAg5WvTiA8wbsIwlr51xh0YWpXT9F5EX3Cnv+11O/mU=",
       "System.Private.CoreLib.wasm": "sha256-3O3muuRQwoLRecYRjfIFWUURvTjP4EmD2O8wYg2UDNY=",
-      "CrossPlatformUI.wasm": "sha256-NA/wNnkJHdB/1ouomswzvj6iQrve8YsXZhy+nZ6p//I=",
-      "FtRandoLib.wasm": "sha256-L6O8k13zD1JlzUNDda2ZHbXdCbGau1ojVS3RIb2dqic=",
-      "RandomizerCore.wasm": "sha256-FU4s68/4lzD+nUrCJj2gzr8AIWj8UoY5RAwg2IQYyJ4=",
-      "CrossPlatformUI.Browser.wasm": "sha256-B1ZPy7om8J6XtzwWJtKEPjJQJLuvKHp1LQjSI5J3Gng="
+      "CrossPlatformUI.wasm": "sha256-8bjhvNThZ/K36/7yXrLnVnpb3ZNLLcPZcUmNWbrrYX0=",
+      "FtRandoLib.wasm": "sha256-MzrAfcFaVkwJNSRrZsh5g8qEzBERcgJSTm5CDweEYKc=",
+      "RandomizerCore.wasm": "sha256-vkpEt3YDbjOsagQ9hxO+NgyOMfHZ0skl60RggLZqfi0=",
+      "CrossPlatformUI.Browser.wasm": "sha256-+pgtCp2diEzKnJ9s4JxZ+rzpaxybfWEWZu8MBq3FAW0="
     },
     "pdb": {
       "HarfBuzzSharp.pdb": "sha256-o+dvYynZx3zslGGjDDdKnDmcl4RaCn0yeWJ2V2oabNU=",
       "js65.pdb": "sha256-esjKB+R2Frim8U5ZIowAtPxXV1ToaMURk2scGYhxYxY=",
       "SkiaSharp.pdb": "sha256-xMAEGLZO+3EtuLTd1Hk8JaH6v3fcyyMK8B2HozxipbI=",
-      "CrossPlatformUI.pdb": "sha256-fLanBhviwcXCAhQEAs9DvwTM2Fd/riWrYarYBM1CAfI=",
-      "FtRandoLib.pdb": "sha256-7XHeV9v9DiuDDiK07XeZV5UkWk8LpOjimpEOh3426C8=",
-      "RandomizerCore.pdb": "sha256-rFFKpE3nIDd524G5vmjedrU+RkAlWkOr43/pJb7GAPI=",
-      "CrossPlatformUI.Browser.pdb": "sha256-MHPIQY17CqNEUNLOTafKP49XpLV1H6YzJqtngWpgEt0="
+      "CrossPlatformUI.pdb": "sha256-8K9p1ohI5foQ2ekYXfdcWHT+CwNWrl7KwRzJJH2j15c=",
+      "FtRandoLib.pdb": "sha256-xtTRk5T6Qi29c6o87KPzlP/zAyAqjqWQwr6IpDQ2GV8=",
+      "RandomizerCore.pdb": "sha256-7XPSwfNz4r8VOWQmh0/R5AE94slD8dHeJ3w3XbSSank=",
+      "CrossPlatformUI.Browser.pdb": "sha256-AhNn2JaQTDCStrokhPCYyif75n9Rc+PlrwHdOgLZe0Y="
     },
     "vfs": {
       "runtimeconfig.bin": {
