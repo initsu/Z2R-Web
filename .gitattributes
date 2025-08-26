@@ -4,4 +4,3 @@
 # These file types don't have in-production hash checks
 *.css text
 *.html text
-*.txt text
