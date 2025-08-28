@@ -1,6 +1,8 @@
 ﻿import { dotnet } from './_framework/dotnet.js'
 import { compile } from 'js65/libassembler.js'
 
+const BUNDLE_DOWNLOAD_SIZE = 95 * 1024 * 1024; // used for progress bar - doesn't have to be exact
+
 const is_browser = typeof window != "undefined";
 if (!is_browser) throw new Error(`Expected to be running in a browser`);
 
@@ -16,7 +18,6 @@ function showError(msg) {
     const origFetch = globalThis.fetch.bind(globalThis);
 
     // track cumulative progress across all boot resources
-    let totalKnownBytes = 133 * 1024 * 1024;
     let loadedKnownBytes = 0;
     const inFlight = new Map(); // id -> {loaded,total}
     let started = false;
@@ -33,25 +34,7 @@ function showError(msg) {
     };
 
     const updateOverall = () => {
-        if (totalKnownBytes > 0) {
-            updateProgress(loadedKnownBytes / totalKnownBytes);
-        } else {
-            // best-effort status when sizes are unknown
-            let sumLoaded = 0;
-            for (const r of inFlight.values()) sumLoaded += r.loaded || 0;
-            const mb = (sumLoaded / (1024 * 1024)).toFixed(1);
-            const st = document.getElementById("loading-status");
-            if (st) st.textContent = `Loading… ${mb} MB`;
-        }
-    };
-
-    const maybeFinish = () => {
-        if (inFlight.size === 0 && started) {
-            clearTimeout(finishTimer);
-            finishTimer = setTimeout(() => {
-                updateProgress(1);
-            }, 200);
-        }
+        updateProgress(loadedKnownBytes / BUNDLE_DOWNLOAD_SIZE);
     };
 
     globalThis.fetch = async (input, init) => {
@@ -70,7 +53,6 @@ function showError(msg) {
         const id = Math.random().toString(36).slice(2);
         const reader = res.body.getReader();
 
-        if (contentLength > 0) totalKnownBytes += contentLength;
         inFlight.set(id, { loaded: 0, total: contentLength });
 
         const stream = new ReadableStream({
@@ -86,7 +68,6 @@ function showError(msg) {
                     if (r && r.total > 0) loadedKnownBytes += (r.total - r.loaded);
                     inFlight.delete(id);
                     updateOverall();
-                    maybeFinish();
                     return;
                 }
                 controller.enqueue(value);
