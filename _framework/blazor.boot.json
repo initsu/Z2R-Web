@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CrossPlatformUI.Browser.dll",
   "resources": {
-    "hash": "sha256-ZgX+1dSAxAF76+idpS2LDA1KEvAOuaeuql9t8z4Hkng=",
+    "hash": "sha256-F3Uhzmr93zEUqBWtC8ZWAfFxoyAavN/KLYZxFpluipE=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-N24U85Oq+Lu87cyaw2cACis/9PZhviNyWMBxPDmzJUA="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.js": "sha256-91CDXCvYTrWqTidtPWAY6j9w/EQtJKjSj9VneQwl020="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-5WVHNW9rL4vpL9pHHZSgzrboXjYavXY6Iey11v9xQzw="
+      "dotnet.native.wasm": "sha256-sTjIi7vxk/Cw4oWd08Fz2RLEKw9rHtd5aoyrbsPZD1o="
     },
     "assembly": {
       "Avalonia.Base.wasm": "sha256-BnGD3T29zRMP7EPG/ZURIxLPClm/r6MH/HJ25HKyD2E=",
@@ -28,8 +28,8 @@
       "Avalonia.Remote.Protocol.wasm": "sha256-p9v0P8tIrQLn3ztJz2ghw3vlCwftrAIyZLj4Qa0poV0=",
       "Avalonia.Skia.wasm": "sha256-Lrrh/VWcO4NY2nyXLHyHcazpd1MElnFlQRJ4OzLoxUY=",
       "Avalonia.Vulkan.wasm": "sha256-fdAIlbpflUkBMFXDjmIOteM1ggf24mfT3AZtoMzra4o=",
-      "CrossPlatformUI.Browser.wasm": "sha256-Trnft60e2r+KJV3LaNiuLIYxwPxJbWkyFPnaZ+S0RoA=",
-      "CrossPlatformUI.wasm": "sha256-CP3xubA4MBr8mAm3rPepLfuC2SifZffOxTvwXl28NEE=",
+      "CrossPlatformUI.Browser.wasm": "sha256-MgSll8ylV4KMmVsm5zWtofwB8EzxZBMly+qWBEny3PY=",
+      "CrossPlatformUI.wasm": "sha256-Fytr8ia2WmQh7s2gxsuTVuRbToxdfIAfLq+ecCo1V/8=",
       "DialogHost.Avalonia.wasm": "sha256-xXgFZSMQKsA7181ZeHZSU3t/lGHctHyiZffHDlWO7PA=",
       "DynamicData.wasm": "sha256-pcpKTqdKdFKY5R0P/d0vTD5KjW4UeWfBMktcmldfWzk=",
       "FtRandoLib.wasm": "sha256-MzrAfcFaVkwJNSRrZsh5g8qEzBERcgJSTm5CDweEYKc=",
@@ -54,7 +54,7 @@
       "netstandard.wasm": "sha256-lAg5WvTiA8wbsIwlr51xh0YWpXT9F5EX3Cnv+11O/mU=",
       "Newtonsoft.Json.wasm": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
       "NLog.wasm": "sha256-NHicS66Nz9NhKtEqL1Izd0c6keRFrkiHF8WYVL29tfQ=",
-      "RandomizerCore.wasm": "sha256-vkpEt3YDbjOsagQ9hxO+NgyOMfHZ0skl60RggLZqfi0=",
+      "RandomizerCore.wasm": "sha256-8H6r31AXKiEIEFpGGtjs3jgUsfhhkmaZAWJAEO35hSE=",
       "ReactiveUI.wasm": "sha256-k8GK3GYZupypX2ApFK3FyqN6Yigp3xvLfQz8LSxJi70=",
       "ReactiveUI.Validation.wasm": "sha256-dk+9GcHCWkY1RxZi4EtAQ8W+iOlSPYueYhfMQjy5PsQ=",
       "SD.Tools.Algorithmia.wasm": "sha256-heGAU65gmt/wyaBluWXLj8HU6Lc+DyWY5uiO3BcbnSc=",
