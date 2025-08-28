@@ -16,7 +16,7 @@ function showError(msg) {
     const origFetch = globalThis.fetch.bind(globalThis);
 
     // track cumulative progress across all boot resources
-    let totalKnownBytes = 0;
+    let totalKnownBytes = 133 * 1024 * 1024;
     let loadedKnownBytes = 0;
     const inFlight = new Map(); // id -> {loaded,total}
     let started = false;
