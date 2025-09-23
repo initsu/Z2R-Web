@@ -47,7 +47,7 @@ body {
 
 #progress-fill {
     height: 100%;
-    width: 100%;
+    width: 0%;
     background: #ffd57f;
 }
 

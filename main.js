@@ -1,7 +1,7 @@
 ﻿import { dotnet } from './_framework/dotnet.js'
 import { compile } from 'js65/libassembler.js'
 
-const BUNDLE_DOWNLOAD_SIZE = 95 * 1024 * 1024; // used for progress bar - doesn't have to be exact
+const BUNDLE_DOWNLOAD_SIZE = 80 * 1024 * 1024; // used for progress bar - doesn't have to be exact
 
 const is_browser = typeof window != "undefined";
 if (!is_browser) throw new Error(`Expected to be running in a browser`);
