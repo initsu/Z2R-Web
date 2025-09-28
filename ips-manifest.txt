@@ -2,7 +2,6 @@ Alex.ips
 Alucard.ips
 Aneru.ips
 Barba.ips
-Barba_Link.ips
 Beard_Link.ips
 Black_Mage.ips
 Brian64.ips
@@ -36,6 +35,7 @@ Pyramid.ips
 Riverman.ips
 River_Devil.ips
 Ruto.ips
+Saber.ips
 Samus.ips
 Shadow.ips
 Shantae.ips
