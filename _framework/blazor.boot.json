@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CrossPlatformUI.Browser.dll",
   "resources": {
-    "hash": "sha256-b3dm+ykZaaoxZyOiZoBcyo+N6fw/vkXLqT08+ver/3U=",
+    "hash": "sha256-UqSj+WKO4V/oUohI1cZswNwo6Luv84Sg8k/+EtsuEsU=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-1NGbZH/TUrn9qaL8/I45iP+1W+wJO6dUbp6yqQ9kP+s="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.js": "sha256-OH8zlJkheyf8H9oAbu0wu1oQm9FKy/BKjDk4Bj/va3s="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-YWyyAcIE/0iPtufCLWV2GE4r8tpNssAi+s7yai5qaN0="
+      "dotnet.native.wasm": "sha256-vAMgK2LWsb+84Hnu4Ag2UKRxL/qrZZ0ftizBq+9Hpss="
     },
     "assembly": {
       "Avalonia.Base.wasm": "sha256-BnGD3T29zRMP7EPG/ZURIxLPClm/r6MH/HJ25HKyD2E=",
@@ -28,11 +28,11 @@
       "Avalonia.Remote.Protocol.wasm": "sha256-p9v0P8tIrQLn3ztJz2ghw3vlCwftrAIyZLj4Qa0poV0=",
       "Avalonia.Skia.wasm": "sha256-Lrrh/VWcO4NY2nyXLHyHcazpd1MElnFlQRJ4OzLoxUY=",
       "Avalonia.Vulkan.wasm": "sha256-fdAIlbpflUkBMFXDjmIOteM1ggf24mfT3AZtoMzra4o=",
-      "CrossPlatformUI.Browser.wasm": "sha256-V8HBigKhYwFjcySiMpJ5KmvNU0MrMs4A+JONQ/5ZhcM=",
-      "CrossPlatformUI.wasm": "sha256-5mX2aOeQSC/gkhSmS2CxtDdRLIVCl3kUn1mX0JwZTLk=",
+      "CrossPlatformUI.Browser.wasm": "sha256-w/Sig91tOspFYEz0ysRgYknhnEMUMa6mkmU7FnZ/xbI=",
+      "CrossPlatformUI.wasm": "sha256-1pWScSVwDEzYoI2HaCAGi22HEDCYMn5SlgxHJQ3sjkc=",
       "DialogHost.Avalonia.wasm": "sha256-xXgFZSMQKsA7181ZeHZSU3t/lGHctHyiZffHDlWO7PA=",
       "DynamicData.wasm": "sha256-q/Q7qjDeJsALWvujjfyRGhuxGDhau5nCXd3z2oP7gC0=",
-      "FtRandoLib.wasm": "sha256-RcDFDyEn8Pf/8VHiYhoWKR/S/AzHH6XLS4iNBZyHrm8=",
+      "FtRandoLib.wasm": "sha256-wjiVd6qCB2uR2GlhxAHQiBU3lcMQ1/XknkN3p/VYkfs=",
       "HarfBuzzSharp.wasm": "sha256-Su4t1A5ca41XdWtO+/NbKlPPqL6IcGxTpGATtikbY0s=",
       "js65.wasm": "sha256-ZV/x6K5laHlp6Do6WnU2/vYQjI1e9iyu0CgeYlZr5tc=",
       "Material.Avalonia.wasm": "sha256-k3lNmL+lazmXZOlA4f6X3etJAdD2IWD/ruQwWJbMJsk=",
@@ -54,7 +54,7 @@
       "netstandard.wasm": "sha256-eOgz2RiO4YaPLOMIGgVLNrcfsQhmLQJzR0N7Pu2teXc=",
       "Newtonsoft.Json.wasm": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
       "NLog.wasm": "sha256-NHicS66Nz9NhKtEqL1Izd0c6keRFrkiHF8WYVL29tfQ=",
-      "RandomizerCore.wasm": "sha256-65vYQLdKTi+bvHUaI2tqAgXTvxBWy9QgmfcXp6MHArQ=",
+      "RandomizerCore.wasm": "sha256-eTIGL5gG2q68QI+58mMGfF01k0XewYxBhpgLWR4Qr5A=",
       "ReactiveUI.wasm": "sha256-bpA+fQjTgScjvwNcv1c83WDrH/MQ5rNH5QwBaeDsBUA=",
       "ReactiveUI.Validation.wasm": "sha256-dk+9GcHCWkY1RxZi4EtAQ8W+iOlSPYueYhfMQjy5PsQ=",
       "SD.Tools.Algorithmia.wasm": "sha256-heGAU65gmt/wyaBluWXLj8HU6Lc+DyWY5uiO3BcbnSc=",
