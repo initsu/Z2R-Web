@@ -20,6 +20,7 @@ Geru_(Mace).ips
 Geru_(Spear).ips
 Glitch_Witch.ips
 Gooma.ips
+Guma.ips
 Helmethead.ips
 Hoodie_Link.ips
 Horsehead.ips

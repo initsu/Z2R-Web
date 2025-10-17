@@ -112,6 +112,7 @@ PalaceNumber = $056c
 RegionNumber = $0706
 WorldNumber = $0707
 
+SideViewInit = $8CE1
 ClearNametables = $d266
 JumpEngine = $d385
 
@@ -193,6 +194,9 @@ StatTrackingSaveFileClear = $7401
 NmiBankShadow8 = $6380
 NmiBankShadowA = $6381
 SoftDisableNmi = $6382
+
+; Flag to store if the dialog has ended
+DialogCompleteTmp = $0523
 
 StatTrackingBase = $6383
 SET_RES_BASE StatTrackingBase
