@@ -43,7 +43,7 @@ FREE_UNTIL $D4CE
 
 ; Do this for the other places that also wait for sprite zero like opening the menu
 .segment "PRG0"
-.org $9D59
+.org $9D56
     jsr SetupScanlineIRQ
     jmp $9D75
 FREE_UNTIL $9D75
@@ -154,6 +154,9 @@ HandleLagFrame:
     sta $2005
 
 
+    ; Disabled the "glove in hud" for now. Keeping the code here cause i like it still.
+    ; delete this code if you hate fun.
+
     ; Here be dragons :) Write directly to OAM through OAMDATA to set a "lag sprite"
     ; There's two sources of corruptions when doing this that we need to avoid.
     ; The first is when you write to OAMADDR, it will corrupt the 8 bytes at that address
@@ -163,27 +166,27 @@ HandleLagFrame:
 
     ; But theres one hold up, the sprites at $f8 and $fc are the life bar sprites, so instead
     ; we can start the write from $f4 and write to the end still
-    lda #$f4
-    sta $2003 ; OAMADDR
+;    lda #$f4
+;    sta $2003 ; OAMADDR
     ; and write a Hand sprite
     
-    lda #$0e  ; y = 14
-    sta $2004 ; OAMDATA
-    lda #$8E  ; tile = hand sprite
-    sta $2004 ; OAMDATA
-    lda #1    ; attr = palette 1
-    sta $2004 ; OAMDATA
-    lda #248  ; x = 248
-    sta $2004 ; OAMDATA
+;    lda #$0e  ; y = 14
+;    sta $2004 ; OAMDATA
+;    lda #$8E  ; tile = hand sprite
+;    sta $2004 ; OAMDATA
+;    lda #1    ; attr = palette 1
+;    sta $2004 ; OAMDATA
+;    lda #248  ; x = 248
+;    sta $2004 ; OAMDATA
 
     ; Load the current health/magic bar into here
     ; That should prevent sprite corruption since the internal OAM ADDR ends at #0
-    ldx #$f8
-    @loop:
-        lda $200,x
-        sta $2004
-        inx
-        bne @loop
+;    ldx #$f8
+;    @loop:
+;        lda $200,x
+;        sta $2004
+;        inx
+;        bne @loop
     jsr SetupScanlineIRQ
 @HandleAudio:
     ; Skip processing audio during a real lag frame since thats what
@@ -766,3 +769,18 @@ LoadAreaBGMetatile:
 ; link's overworld sprite has an invisible half that needs moved outta the new sprite bank as well
 .org $8739
     lda #$73
+
+; So here's a fun z2 moment. The vanilla routine that loads the metatiles for the spell spell tower
+; causes the game to miss the sprite zero hit. Which just means a small amount of visual glitching
+; in the corner of the screen, but in z2r, it causes much worse glitching now that we use IRQ for the
+; scroll split. For a quick fix, we can set the IRQ early, and since we have double split protection
+; in the setup scanline routine, it should be fine.
+
+.org $8ED8
+    jsr SetScrollSplitDuringSpellSpellTower
+
+.reloc
+SetScrollSplitDuringSpellSpellTower:
+    jsr SetupScanlineIRQ
+    lda $0763
+    rts
