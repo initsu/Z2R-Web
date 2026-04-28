@@ -17,15 +17,16 @@ mkdir -p "$VERSION"
 
 # Move all the listed files and folders into that folder
 # Exclude the version folder itself to avoid recursion
-mv Asm \
-   Sprites \
+mv \
    _framework \
+   Asm \
+   js65 \
+   Sprites \
    app.css \
    CrossPlatformUI.Browser.runtimeconfig.json \
    PalaceRooms.json \
    index.html \
    ips-manifest.txt \
-   libassembler.js \
    main.js \
    package.json \
    z2r-logo.png \
