@@ -1,0 +1,29 @@
+# This is an example Custom Room Pool that you can replace with your own
+
+name: SGL 2026 Room Pool
+description: Room pool for SGL 2026 - Created by MiRai
+
+groups-include:
+- VANILLA
+- V4_0
+#- V5_0
+
+tags:
+- name: SGL
+  priority: 1 # for initial testing
+
+tags-exclude:
+- NotSGL
+#- Easy
+#- LongDeadEnd
+
+rooms:
+- name: triforceOfCourage M5
+  itembits: 0b1110  # remove door too close to entrance
+
+- name: triforceOfCourage M18
+  itembits: 0b1110  # remove door too close to entrance
+
+
+rooms-exclude:
+#- None
