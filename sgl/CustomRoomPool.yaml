@@ -24,6 +24,8 @@ rooms:
 - name: triforceOfCourage M18
   itembits: 0b1110  # remove door too close to entrance
 
+- name: Up elevator block columns right turn
+  enemies: 073F843E44028E # remove one of the flying enemies
 
 rooms-exclude:
 #- None

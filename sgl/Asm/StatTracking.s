@@ -2,6 +2,7 @@
 .include "z2r.inc"
 
 .import SwapPRG, SwapToSavedPRG
+.import FlagHudUpdate
 
 BUFFER_OFF = $0301
 PPUADDR_HI = $0302
@@ -119,6 +120,7 @@ StatTrackDownStab:
 .reloc
 SaveTimestampForPalace:
     dec $0794
+    jsr FlagHudUpdate
     lda RegionNumber
     asl
     asl
