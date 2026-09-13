@@ -17,6 +17,18 @@ mkdir -p "$VERSION"
 
 # Move all the listed files and folders into that folder
 # Exclude the version folder itself to avoid recursion
+mv \
+   _framework \
+   Asm \
+   js65 \
+   Sprites \
+   app.css \
+   PalaceRooms.json \
+   index.html \
+   ips-manifest.txt \
+   main.js \
+   z2r-logo.png \
+   "$VERSION"/
 
 # Add to git and commit
 git add .
