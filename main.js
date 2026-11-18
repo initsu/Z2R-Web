@@ -16,6 +16,17 @@ function showError(msg) {
 // Big code chunk to hook into the loading of the app so we can display progress
 (() => {
     const origFetch = globalThis.fetch.bind(globalThis);
+    const canRetryRequest = (input, init) => /^(GET|HEAD)$/i.test(init?.method ?? input?.method ?? "GET");
+
+    const retryOnHttpError = async (response, input, init) => {
+        if (response.status < 400 || !canRetryRequest(input, init)) {
+            return response;
+        }
+
+        response.body?.cancel().catch(() => {});
+        // Bypass the cached response and allow the new response to be cached.
+        return origFetch(input, { ...init, cache: "reload" });
+    };
 
     // This is a custom cache workaround for GitHub Pages arbitrarily
     // sending different ETags for the same files. (It might depend on
@@ -73,22 +84,37 @@ function showError(msg) {
 
         var fetchResult;
 
+        let reloaded = false;
+        const retryOnIntegrityError = (error) => {
+            const integrity = init?.integrity ?? input?.integrity;
+            const signal = init?.signal === undefined ? input?.signal : init.signal;
+            if (!(error instanceof TypeError) || !integrity || signal?.aborted || !canRetryRequest(input, init)) {
+                return fetchError(error);
+            }
+
+            // An integrity mismatch rejects fetch before it returns a response.
+            reloaded = true;
+            return origFetch(input, { ...init, cache: "reload" }).catch(fetchError);
+        };
+
         if (deployTs !== 0) {
             // check if transferSize is non-zero (there was no local cache)
-            const cachedFetchResult = await origFetch(input, { ...init, cache: "force-cache" }).catch(fetchError);
+            const cachedFetchResult = await origFetch(input, { ...init, cache: "force-cache" }).catch(retryOnIntegrityError);
             const perfEntries = performance?.getEntriesByName(absoluteUrl, "resource");
             const lastEntry = perfEntries?.[perfEntries.length - 1];
             const wasNetworkRequest = lastEntry?.transferSize > 0;
 
             var staleCache = false;
-            if (!wasNetworkRequest) {
-                // if we have a reference timestamp, ensure the cached copy isn't
-                // much older than the deploy timestamp.
-                const lm = Date.parse(cachedFetchResult.headers.get("Last-Modified"));
-                staleCache = !lm || lm < deployTs - 180_000;
-                // any cached non-success counts as stale
+            if (!reloaded && !wasNetworkRequest) {
                 if (cachedFetchResult.status >= 400) {
+                    // we have a cached error
+                    fetchResult = await retryOnHttpError(cachedFetchResult, input, init).catch(fetchError);
                     staleCache = true;
+                } else {
+                    // if we have a reference timestamp, ensure the cached copy isn't
+                    // much older than the deploy timestamp.
+                    const lm = Date.parse(cachedFetchResult.headers.get("Last-Modified"));
+                    staleCache = !lm || lm < deployTs - 180_000;
                 }
             }
 
@@ -98,7 +124,7 @@ function showError(msg) {
         }
 
         if (!fetchResult) {
-            fetchResult = await origFetch(input, { ...init, cache: "default" }).catch(fetchError);
+            fetchResult = await origFetch(input, { ...init, cache: "default" }).catch(retryOnIntegrityError);
         }
 
         if (!isBootResource(url, fetchResult) || !fetchResult.body || fetchResult.bodyUsed) {
